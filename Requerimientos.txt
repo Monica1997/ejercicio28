@@ -1,0 +1,51 @@
+Requerimientos
+
+Crear un programa que permita guardar información de los alumnos
+de un grupo y calcular el promedio general. Se deben poder
+agregar, borrar y modificar los datos de los alumnos.
+Se debe poder buscar a un alumno por su número de cuenta y ver
+su información.
+La información se leerá de un archivo al inicio y se guardará en
+el mismo archivo al terminar de trabajar.
+
+Datos del alumno: número de cuenta,nombre,edad,promedio,correo
+
+
+Diseño 
+
+
+con una estructura 
+   
+struct alumno 
+{
+  char numeroDeCuenta[11];
+  char nombre[70];
+  int edad;
+  float promedio;
+  char correo[150];
+}
+
+struct alumno grupo[100];
+
+31328730-1/Rivas Serrano Daniel Antonio/19/8.01/danielrs669@gmail.com
+31330412-1/Martínez Reyes Alma Verónica/19/8.02/almamtz9721@gmail.com
+
+
+void cargarArchivo(char nombreArchivo[])
+{
+  //ABRIR EL ARCHIVO nombreArchivo
+  //LEER EL ARCHIVO
+  leerArchivo ();
+  //CERRAR EL ARCHIVO
+}
+
+leerArchivo()
+{
+	while(no se acabe el archivo){
+	   fscanf (apuntadorArchivo,"%s/%s/%d/%f/%s\n",grupo[i].numeroDeCuenta,grupo[i].nombre,&grupo[i].edad,&grupo[i].promedio,grupo[i].correo);
+   	}
+
+
+}
+
+  
