@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main()
+{
+    int i,j,k;
+    char contador1 [3] = "+-";
+    char contador2 [3] = "-+";
+    for (k=0; k<4; k++)
+    {
+        for (i=0; i<4; i++)
+        {
+            printf("%s", contador1);
+        }
+        printf ("\n");
+        for (j=0; j<4; j++)
+        {
+            printf ("%s", contador2);
+        }
+        printf("\n");
+    }
+    getchar();
+    return 0;
+}
